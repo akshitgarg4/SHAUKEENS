@@ -1,4 +1,4 @@
-   ## <img src="static/logo.png" width="10px" height="10px"> SHAUKEENS 
+   ## <img src="static/logo.png" width="20px" height="20px"> SHAUKEENS 
 SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for both mobile screens and laptops.
 
 ## Explore your PlayList and Favourite Songs.
