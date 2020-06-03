@@ -226,11 +226,11 @@ a{
 .songs{
 	width:85%;
 	display: inline-block;
+	overflow:hidden;
 }
 .songs div{
-	width:90%;
+	width:900px;
 	height:22px;
-	overflow:hidden;
 }
 .songs div:hover{
 	animation:move 10s linear infinite ;
@@ -241,7 +241,7 @@ a{
 
 	}
 	50%{
-		transform: translate(-100px);
+		transform: translate(-300px);
 	}
 	100%{
 		transform: translate(0px);
