@@ -395,7 +395,7 @@ a{
 /*footer or part5*/
 .footer-navbar{
 	width:100%;
-	height:60px;
+	height:80px;
 	background-color: var(--content-color);
 	text-align: center;
 	padding-top: -20px;
@@ -587,4 +587,23 @@ font-size: 12px;
 	border:1px solid black;
 	transform:scale(1.1);
 	transition:0.5s ease-in-out;
+}
+
+/*AUDIO CONTROLER*/
+
+.audio-container{
+	position:fixed;
+	left:0px;
+	top:95%;
+	width:100%;
+	height:auto;
+}
+audio{
+	padding-left:10%;
+	height:30px;
+	width:80%;
+	background-color: transparent;
+	border-radius: 0px;
+	display: hidden;
+	outline: none;
 }

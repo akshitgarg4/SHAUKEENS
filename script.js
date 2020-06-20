@@ -38,3 +38,57 @@ for(var i=0;i<fav.length;i++)
 		}
 	}
 }
+
+//AUDIO PLAYER
+var song=false,curr_song;
+
+var playbtn=document.querySelectorAll("#playpausebtn");
+for(var i=0;i<playbtn.length;i++)
+{
+	playbtn[i].addEventListener("click",function(){
+	var music=document.getElementById("audio");
+	if(music.getAttribute('src') == this.getAttribute('data-src'))
+	{
+		if(song)
+	{
+		this.setAttribute('class','far fa-play-circle');
+		audio.pause();
+		song=false;
+	}
+	else
+	{
+		//that song would be played which is given by the name of the attribute
+		this.setAttribute('class','far fa-pause-circle');
+		audio.play();
+		song=true;
+	}
+	}
+	else
+	{
+		if(song)
+		{
+		song=true;
+		curr_song.setAttribute('class','far fa-play-circle');
+		curr_song=this;
+		console.log(curr_song);
+		var song_to_play=this.getAttribute('data-src');
+	    music.setAttribute('src',song_to_play);
+		this.setAttribute('class','far fa-pause-circle');
+		music.play();
+		}
+		else
+		{
+		song=true;
+		this.setAttribute('class','far fa-pause-circle');
+		curr_song=this;
+		console.log(curr_song);
+		var song_to_play=this.getAttribute('data-src');
+	    music.setAttribute('src',song_to_play);
+		music.play();
+		}
+		
+	}
+	
+});
+
+}
