@@ -66,3 +66,10 @@ module.exports.login=function(req,res)
 {
     return res.render('main',{email:req.body.email});
 }
+
+
+module.exports.signout=function(req,res)
+{
+    req.logout();
+    return res.redirect('/');
+}

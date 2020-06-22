@@ -7,7 +7,7 @@ const homecontroller=require('../controller/home');
 router.get('/',homecontroller.home);
 router.post('/sign-up',homecontroller.create);
 router.post('/login',passport.authenticate('local',{failureRedirect:'/'}),homecontroller.login);
-
+router.get('/sign-out',homecontroller.signout);
 
 
 
