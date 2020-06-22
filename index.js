@@ -7,6 +7,7 @@ const path=require('path');
 const session=require('express-session');
 const passport=require('passport');
 const passportLocal=require('./config/passport');
+const MongoStore = require('connect-mongo')(session);
 
 
 app.use(express.urlencoded());
@@ -21,7 +22,21 @@ app.use(session({
     resave:false,
     cookie:{
         maxAge:(1000*60*100)
-    }
+    },
+    store: new MongoStore ({
+        mongooseConnection:db,
+        autoremove:'disabled'
+    },function(err)
+    {
+        if(err)
+        {
+        console.log("error")
+
+        }
+        else{
+            console.log("ok");
+        }
+    })
 }));
 app.use(passport.initialize());
 app.use(passport.session());
