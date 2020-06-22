@@ -278,14 +278,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll relaxed-section">
-						<div class="list  relaxed-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "relaxed" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Dheeme dheeme</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="relaxed-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="relaxed-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/relaxed/Dheeme dheeme.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -322,14 +326,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll meditation-section">
-						<div class="list  meditation-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "meditation" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Dheeme dheema</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="meditation-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="meditation-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/meditation/Dheema dheeme.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -366,14 +374,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll sad-section">
-						<div class="list  sad-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "sad" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Dheeme dheema</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="sad-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="sad-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/sad/Dheema dheeme.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -410,14 +422,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll party-section">
-						<div class="list  party-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "party" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Abhi to party shuru hui hai</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="party-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="party-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/party/Abhi to party shuru hui hai.mp3"></i></div>
-						</div>						
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
+						</div>
+						<% } %>
+						<% } %>						
 						
 					</div>
 				</div>
@@ -454,14 +470,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll devotion-section">
-						<div class="list  devotion-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "devotion" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Ek onkaar</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="devotion-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="devotion-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/devotion/Ek onkaar.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -498,14 +518,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll romantic-section">
-						<div class="list  romantic-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "romantic" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Ambarsariya</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="romantic-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="romantic-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/romantic/Ambarsariya.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -542,14 +566,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll happy-section">
-						<div class="list  happy-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "happy" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Hui malang</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="happy-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="happy-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/happy/Hui malang.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -586,14 +614,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll dj-section">
-						<div class="list  DJ-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "dj" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Its time to disco</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="DJ-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="DJ-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/dj/Its time to disco.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 					</div>
 				</div>
 			</div>
@@ -629,14 +661,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll workout-section">
-						<div class="list  workout-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "workout" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Dheeme dheeme</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="workout-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="workout-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/workout/Dheeme dheeme.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 					</div>
 				</div>
 			</div>
@@ -679,14 +715,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll diljit-section">
-						<div class="list  diljit-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "diljit" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Dil todeya</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="diljit-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="diljit-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/diljit/Dil todeya.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 					</div>
 				</div>
 			</div>
@@ -724,14 +764,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll neha-section">
-						<div class="list  neha-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "neha" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Dheeme dheeme</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="neha-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="neha-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/neha/Dheeme dheeme.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 					</div>
 				</div>
 			</div>
@@ -768,14 +812,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll guru-section">
-						<div class="list  guru-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "guru" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Lagdi lahore di</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="guru-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="guru-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/guru/Lagdi lahore di.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 					</div>
 				</div>
 			</div>
@@ -812,14 +860,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll hardy-section">
-						<div class="list  hardy-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "hardy" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Chandigarh mein</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="hardy-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="hardy-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/hardy/Chandigarh mein.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 
 					</div>
 				</div>
@@ -857,14 +909,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll mika-section">
-						<div class="list  mika-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "mika" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>440 Volt</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="mika-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="mika-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/mika/440 Volt.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
@@ -902,14 +958,18 @@
 						<p>SONGS</p>
 					</div>
 					<div class="scroll arijit-section">
-						<div class="list  arijit-sectionSONG 1">
+						<% for(song of songs) { %>
+							<% if(song.section == "arijit" && song.dest == "none") { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Hamdard</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="arijit-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="arijit-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/arijit/Hamdard.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
+						<% } %>
 						
 					</div>
 				</div>
