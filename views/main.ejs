@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SHAUKEENS</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="AKSHIT GARG">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- adding favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="static/logo.png">
+	<!-- this is basically to use the icons of from font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+<!-- MAIN NAVIGATION BAR AT TOP -->
+	<section>
+		<div  class="navigation-bar">
+			<div class="main-name">
+				<span class="text left icon "><i class="fas fa-headphones"></i> SHAUKEENS</span>
+			</div>
+			<span class="icon right">
+				<i class="far fa-user-circle place"></i>
+			</span>
+			<div class="side-buttons right">
+				<button class="buttons" type="submit"><a href="#login-popup">LOGIN</a></button>
+				<button class="buttons" type="submit"><a href="#signup-popup">SIGN UP</a></button>
+			</div>
+		</div>
+	</section>
+
+
+
+<!-- CONTAINS LIST OF SONGS MOOD WISE , SONGS IN PLAYLIST AND LIST OF FAVOURITE SONGS -->
+	<section class="part2">
+		<div class="rotating-moods">
+			<div class="borders">
+			</div>
+			<div class="heading">
+				<p>MOODS</p>
+			</div>
+				<div class="main-box-moving">
+					<div class="main-box-moving-item">
+						<div class="items"><a href="#moods-popup1"><img src="static/music1.jpg"></a></div>
+						<div class="items"><a href="#moods-popup2"><img src="static/music2.jpg"></a></div>
+						<div class="items"><a href="#moods-popup3"><img src="static/music3.jpg"></a></div>
+						<div class="items"><a href="#moods-popup4"><img src="static/music4.jpg"></a></div>
+						<div class="items"><a href="#moods-popup5"><img src="static/music5.jpg"></a></div>
+						<div class="items"><a href="#moods-popup6"><img src="static/music6.jpg"></a></div>
+						<div class="items"><a href="#moods-popup7"><img src="static/music7.png"></a></div>
+						<div class="items"><a href="#moods-popup8"><img src="static/music8.png"></a></div>
+						<div class="items"><a href="#moods-popup9"><img src="static/music9.jpeg"></a></div>
+					</div>
+				</div>
+		</div>
+
+		<div class="queue">
+			<div class="content">
+				<div class="border">
+				</div>
+				<div class="heading">
+					<p>PLAY LIST</p>
+				</div>
+				<div class="scroll playlist-section">
+				
+				</div>
+			</div>
+			
+			<div class="content">
+				<div class="border">
+				</div>
+				<div class="heading">
+					<p>FAVOURITES</p>
+				</div>
+				<div class="scroll favourites-section">
+			    </div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+<!-- CONTAINS LIST OF SONGS ARTIST WISE -->
+	<section class="part3" id="artist-selection">
+		<div class="borderss">
+		</div>
+
+		<div class="heading">
+			<p>ARTISTS</p>
+		</div>
+
+		<div class="artist-block">
+			<div class="artist-box">
+				<a href="#artist-popup1">
+					<div class="artist-box-photo">
+						<img src="static/artist1.jpg">
+					</div>
+					<div class="artist-box-name">
+						<p>DILJIT DOSANJH</p>
+					</div>
+				</a>
+			</div>
+			<div class="artist-box">
+				<a href="#artist-popup2">
+					<div class="artist-box-photo">
+						<img src="static/artist2.jpg">
+					</div>
+					<div class="artist-box-name">
+						<p>NEHA KAKKAR</p>
+					</div>
+				</a>
+			</div>
+			<div class="artist-box">
+				<a href="#artist-popup3">
+					<div class="artist-box-photo">
+						<img src="static/artist3.jpg">
+					</div>
+					<div class="artist-box-name">
+						<p>GURU RANDHAWA</p>
+					</div>
+				</a>
+			</div>
+			<div class="artist-box">
+				<a href="#artist-popup4">
+					<div class="artist-box-photo">
+						<img src="static/artist4.jpg">
+					</div>
+					<div class="artist-box-name">
+						<p>HARDY SANDHU</p>
+					</div>
+				</a>
+			</div>
+			<div class="artist-box">
+				<a href="#artist-popup5">
+					<div class="artist-box-photo">
+						<img src="static/artist5.jpg">
+					</div>
+					<div class="artist-box-name">
+						<p>MIKA SINGH</p>
+					</div>
+				</a>
+			</div>
+			<div class="artist-box">
+				<a href="#artist-popup6">
+					<div class="artist-box-photo">
+						<img src="static/artist6.jpg">
+					</div>
+					<div class="artist-box-name">
+						<p>ARIJIT SINGH</p>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</section>
+
+
+    <!-- CONTAINS LIST OF SONGS LANGUAGE WISE -->
+	<section class="part4">
+		<div class="language-songs">
+
+			<div class="english-songs">
+				<div class="contents">
+					<div class="border">
+					</div>
+					<div class="heading">
+						<p>ENGLISH SONGS</p>
+					</div>
+					<div class="scroll english-section">
+						<div class="list  english-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Alan walker faded</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="english-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="english-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/english/Alan walker faded.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="english-songs">
+				<div class="contents">
+					<div class="border">
+					</div>
+					<div class="heading">
+						<p>HINDI SONGS</p>
+					</div>
+					<div class="scroll hindi-section">
+						<div class="list  hindi-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Bekhayali</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="hindi-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="hindi-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/hindi/bekhayali.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+    <!-- FOOTER NAVIGATION BAR -->
+	<section class="part5">
+		<div class="footer-navbar">
+			<p class="text">&copy AKSHIT GARG </p>
+		</div>
+	</section>
+    <!-- POP UP ON CLICKING LOGIN -->
+	<aside>
+		<div id="login-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor"> LOGIN</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="forms">
+				<form>
+					<div class="input-box">
+						<input type="text" required >
+						<label>EMAIL ID</label>
+					</div>
+					<div class="input-box">
+						<input type="password" required >
+						<label>PASSWORD</label>
+					</div>
+					<input class="submit-form" type="submit" value="Submit">
+				
+					
+				</form>
+			</div>
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		</div>		
+	</aside>
+	<!-- POP UP ON CLICKING SIGN UP -->
+	<aside>
+		<div id="signup-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">SIGN UP</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="forms">
+				<form>
+					<div class="input-box">
+						<input type="text" required >
+						<label>NAME</label>
+					</div>
+					<div class="input-box">
+						<input type="text" required >
+						<label>EMAIL ID</label>
+					</div>
+					<div class="input-box">
+						<input type="password" required >
+						<label>PASSWORD</label>
+					</div>
+					<input class="submit-form" type="submit" value="Submit">
+				</form>
+			</div>
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		</div>		
+	</aside>
+
+
+    <!-- POP UP OF 9 DIFFERENT MOODS WHICH POPS ON CLICKING ON IMAGE -->
+	<aside>
+		<div id="moods-popup1" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>RELAXED</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music1.jpg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll relaxed-section">
+						<div class="list  relaxed-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Dheeme dheeme</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="relaxed-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="relaxed-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/relaxed/Dheeme dheeme.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup2" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>MEDITATION</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music2.jpg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll meditation-section">
+						<div class="list  meditation-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Dheeme dheema</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="meditation-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="meditation-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/meditation/Dheema dheeme.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup3" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SAD</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music3.jpg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll sad-section">
+						<div class="list  sad-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Dheeme dheema</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="sad-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="sad-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/sad/Dheema dheeme.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup4" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>PARTY</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music4.jpg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll party-section">
+						<div class="list  party-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Abhi to party shuru hui hai</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="party-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="party-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/party/Abhi to party shuru hui hai.mp3"></i></div>
+						</div>						
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup5" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>DEVOTION</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music5.jpg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll devotion-section">
+						<div class="list  devotion-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Ek onkaar</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="devotion-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="devotion-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/devotion/Ek onkaar.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup6" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>ROMANTIC</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music6.jpg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll romantic-section">
+						<div class="list  romantic-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Ambarsariya</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="romantic-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="romantic-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/romantic/Ambarsariya.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup7" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>HAPPY</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music7.png" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll happy-section">
+						<div class="list  happy-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Hui malang</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="happy-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="happy-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/happy/Hui malang.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup8" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>DJ</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music8.png" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll dj-section">
+						<div class="list  DJ-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Its time to disco</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="DJ-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="DJ-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/dj/Its time to disco.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<aside>
+		<div id="moods-popup9" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">MOODS</div>
+					<span class="right small-text"><a href="#">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>WORKOUT</p>
+					</div>
+					<div class="image-placement">
+						<img src="static/music9.jpeg" width="250px" height="175px">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll workout-section">
+						<div class="list  workout-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Dheeme dheeme</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="workout-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="workout-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/workout/Dheeme dheeme.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+
+
+
+
+
+
+	<!-- 6 POP UPs TO LIST SONGS OF EACH ARTIST -->
+	<aside>
+		<div id="artist-popup1" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">ARTIST</div>
+					<span class="right small-text"><a href="#artist-selection">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>DILJIT DOSANJH</p>
+					</div>
+					<div class="artist-box-photo">
+						<img src="static/artist1.jpg">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll diljit-section">
+						<div class="list  diljit-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Dil todeya</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="diljit-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="diljit-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/diljit/Dil todeya.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+
+
+	<aside>
+		<div id="artist-popup2" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">ARTIST</div>
+					<span class="right small-text"><a href="#artist-selection">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>NEHA KAKKAR</p>
+					</div>
+					<div class="artist-box-photo">
+						<img src="static/artist2.jpg">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll neha-section">
+						<div class="list  neha-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Dheeme dheeme</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="neha-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="neha-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/neha/Dheeme dheeme.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+
+	<aside>
+		<div id="artist-popup3" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">ARTIST</div>
+					<span class="right small-text"><a href="#artist-selection">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>GURU RANDHAWA</p>
+					</div>
+					<div class="artist-box-photo">
+						<img src="static/artist3.jpg">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll guru-section">
+						<div class="list  guru-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Lagdi lahore di</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="guru-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="guru-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/guru/Lagdi lahore di.mp3"></i></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+
+	<aside>
+		<div id="artist-popup4" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">ARTIST</div>
+					<span class="right small-text"><a href="#artist-selection">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>HARDY SANDHU</p>
+					</div>
+					<div class="artist-box-photo">
+						<img src="static/artist4.jpg">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll hardy-section">
+						<div class="list  hardy-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Chandigarh mein</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="hardy-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="hardy-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/hardy/Chandigarh mein.mp3"></i></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+
+	<aside>
+		<div id="artist-popup5" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">ARTIST</div>
+					<span class="right small-text"><a href="#artist-selection">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>MIKA SINGH</p>
+					</div>
+					<div class="artist-box-photo">
+						<img src="static/artist5.jpg">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll mika-section">
+						<div class="list  mika-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>440 Volt</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="mika-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="mika-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/mika/440 Volt.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+
+	<aside>
+		<div id="artist-popup6" class="moods-popup">
+			<div  class="navigation-bar-minor">
+				<div class="main-name">
+					<div class="text-minor">ARTIST</div>
+					<span class="right small-text"><a href="#artist-selection">X</a></span>
+				</div>
+			</div>
+			<div class="image-matter">
+				<div class="song-images">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>ARIJIT SINGH</p>
+					</div>
+					<div class="artist-box-photo">
+						<img src="static/artist6.jpg">
+					</div>
+				</div>
+
+				<div class="song-names">
+					<div class="borders"></div>
+					<div class="heading">
+						<p>SONGS</p>
+					</div>
+					<div class="scroll arijit-section">
+						<div class="list  arijit-sectionSONG 1">
+						 	<div class="songs"> 
+						 		<div>Hamdard</div>
+						 	</div>
+						 	<div class="song-icons add" data-name="SONG 1" data-origin="arijit-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart" data-name="SONG 1" data-origin="arijit-section" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/arijit/Hamdard.mp3"></i></div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-navbar-minor">
+			<p class="text">&copy AKSHIT GARG </p>
+			</div>
+		
+		</div>
+	</aside>
+	<div class="audio-container">
+		<audio id="audio" src="" controls loop="true"></audio>
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
