@@ -4,6 +4,8 @@ const homecontroller=require('../controller/home');
 
 
 router.get('/',homecontroller.home);
+router.post('/sign-up',homecontroller.create);
+router.get('/main',homecontroller.main);
 
 
 

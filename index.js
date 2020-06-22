@@ -2,10 +2,12 @@ const express=require('express');
 const port = 8000;
 const db=require('./config/mongoose');
 const app=express();
+const cookieParser=require('cookie-parser');
 const path=require('path');
 
 
 app.use(express.urlencoded());
+app.use(cookieParser());
 app.use(express.static('assets'));
 app.set('view engine','ejs');
 app.set('views','./views');
