@@ -173,14 +173,16 @@
 						<p>ENGLISH SONGS</p>
 					</div>
 					<div class="scroll english-section">
-						<div class="list  english-sectionSONG 1">
+						<% for(song of englishs) { %>
+						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
-						 		<div>Alan walker faded</div>
+						 		<div><%= song.song %></div>
 						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="english-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="english-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/english/Alan walker faded.mp3"></i></div>
+						 	<div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
 					</div>
 				</div>
 			</div>
