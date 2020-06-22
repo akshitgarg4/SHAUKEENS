@@ -11,7 +11,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/static/logo.ico">
 	<!-- this is basically to use the icons of from font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    <script src="jquery-3.5.1.min.js"></script>
 </head>
 <body>
 
@@ -66,6 +66,18 @@
 					<p>PLAY LIST</p>
 				</div>
 				<div class="scroll playlist-section">
+					<% for(song of songs) { %>
+						<% if(song.dest == "plist") { %>
+					<div class="list <%=song.origin+song.name%>">
+						 <div class="songs"> 
+							 <div><%= song.song %></div>
+						 </div>
+						 <div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="false"><i class="fas fa-minus-circle"></i></div>
+						 <div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+						 <div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
+					</div>
+					<% } %>
+					<% } %>
 				
 				</div>
 			</div>
@@ -77,6 +89,18 @@
 					<p>FAVOURITES</p>
 				</div>
 				<div class="scroll favourites-section">
+					<% for(song of songs) { %>
+						<% if(song.dest == "fav") { %>
+					<div class="list <%=song.origin+song.name%>">
+						 <div class="songs"> 
+							 <div><%= song.song %></div>
+						 </div>
+						 <div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+						 <div class="song-icons heart permanent"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="false"><i class="fas fa-heart"></i></div>
+						 <div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
+					</div>
+					<% } %>
+					<% } %>
 			    </div>
 			</div>
 		</div>
@@ -173,7 +197,8 @@
 						<p>ENGLISH SONGS</p>
 					</div>
 					<div class="scroll english-section">
-						<% for(song of englishs) { %>
+						<% for(song of songs) { %>
+							<% if(song.section == "english" && song.dest == "none") { %>
 						<div class="list <%=song.origin+song.name%>">
 						 	<div class="songs"> 
 						 		<div><%= song.song %></div>
@@ -182,6 +207,7 @@
 						 	<div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
 						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
 						</div>
+						<% } %>
 						<% } %>
 					</div>
 				</div>
@@ -195,14 +221,19 @@
 						<p>HINDI SONGS</p>
 					</div>
 					<div class="scroll hindi-section">
-						<div class="list  hindi-sectionSONG 1">
-						 	<div class="songs"> 
-						 		<div>Bekhayali</div>
-						 	</div>
-						 	<div class="song-icons add" data-name="SONG 1" data-origin="hindi-section" data-root="true"><i class="fas fa-plus-circle"></i></div>
-						 	<div class="song-icons heart" data-name="SONG 1" data-origin="hindi-section" data-root="true"><i class="fas fa-heart"></i></div>
-						 	<div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="./songs/hindi/bekhayali.mp3"></i></div>
-						</div>
+						<% for(song of songs) { %>
+							<% if(song.section == "hindi" && song.dest == "none") { %>
+							<div class="list <%=song.origin+song.name%>">
+								 <div class="songs"> 
+									 <div><%= song.song %></div>
+								 </div>
+								 <div class="song-icons add" data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-plus-circle"></i></div>
+								 <div class="song-icons heart"  data-name="<%= song.name %>" data-origin="<%= song.origin %>" data-root="true"><i class="fas fa-heart"></i></div>
+								 <div class="song-icons"><i class="far fa-play-circle" id="playpausebtn" data-src="<%= song.src %>"></i></div>
+							</div>
+							<% } %>
+							<% } %>
+
 					</div>
 				</div>
 			</div>
@@ -894,7 +925,7 @@
 		<audio id="audio" src="" controls loop="true"></audio>
 	</div>
 
-<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="/js/script2.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
