@@ -4,11 +4,11 @@
 	<title>SHAUKEENS</title>
 	<meta charset="UTF-8">
 	<meta name="author" content="AKSHIT GARG">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- adding favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="static/logo.png">
+	<link rel="shortcut icon" type="image/x-icon" href="/static/logo.png">
 	<!-- this is basically to use the icons of from font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -27,8 +27,8 @@
 				<i class="far fa-user-circle place"></i>
 			</span>
 			<div class="side-buttons right">
-				<button class="buttons" type="submit"><a href="#login-popup">LOGIN</a></button>
-				<button class="buttons" type="submit"><a href="#signup-popup">SIGN UP</a></button>
+				<button class="buttons" ><a ><%= locals.email %></a></button>
+				<button class="buttons" ><a >Sign Out</a></button>
 			</div>
 		</div>
 	</section>
@@ -217,67 +217,7 @@
 			<p class="text">&copy AKSHIT GARG </p>
 		</div>
 	</section>
-    <!-- POP UP ON CLICKING LOGIN -->
-	<aside>
-		<div id="login-popup">
-			<div  class="navigation-bar-minor">
-				<div class="main-name">
-					<div class="text-minor"> LOGIN</div>
-					<span class="right small-text"><a href="#">X</a></span>
-				</div>
-			</div>
-			<div class="forms">
-				<form>
-					<div class="input-box">
-						<input type="text" required >
-						<label>EMAIL ID</label>
-					</div>
-					<div class="input-box">
-						<input type="password" required >
-						<label>PASSWORD</label>
-					</div>
-					<input class="submit-form" type="submit" value="Submit">
-				
-					
-				</form>
-			</div>
-			<div class="footer-navbar-minor">
-			<p class="text">&copy AKSHIT GARG </p>
-			</div>
-		</div>		
-	</aside>
-	<!-- POP UP ON CLICKING SIGN UP -->
-	<aside>
-		<div id="signup-popup">
-			<div  class="navigation-bar-minor">
-				<div class="main-name">
-					<div class="text-minor">SIGN UP</div>
-					<span class="right small-text"><a href="#">X</a></span>
-				</div>
-			</div>
-			<div class="forms">
-				<form>
-					<div class="input-box">
-						<input type="text" required >
-						<label>NAME</label>
-					</div>
-					<div class="input-box">
-						<input type="text" required >
-						<label>EMAIL ID</label>
-					</div>
-					<div class="input-box">
-						<input type="password" required >
-						<label>PASSWORD</label>
-					</div>
-					<input class="submit-form" type="submit" value="Submit">
-				</form>
-			</div>
-			<div class="footer-navbar-minor">
-			<p class="text">&copy AKSHIT GARG </p>
-			</div>
-		</div>		
-	</aside>
-
+   
 
     <!-- POP UP OF 9 DIFFERENT MOODS WHICH POPS ON CLICKING ON IMAGE -->
 	<aside>
@@ -952,7 +892,7 @@
 		<audio id="audio" src="" controls loop="true"></audio>
 	</div>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>

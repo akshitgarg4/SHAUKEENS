@@ -49,7 +49,7 @@ module.exports.create=function(req,res)
                 }
                 else{
                     console.log("creating db");
-                    return res.redirect('/main');
+                    return res.redirect('back');
                 }
                
 
@@ -62,8 +62,7 @@ module.exports.create=function(req,res)
     })
       
 }
-
-module.exports.main=function(req,res)
+module.exports.login=function(req,res)
 {
-    return res.render('music');
+    return res.render('main',{email:req.body.email});
 }
