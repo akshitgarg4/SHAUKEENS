@@ -2,12 +2,14 @@ const express=require('express');
 const port = 8000;
 const db=require('./config/mongoose');
 const app=express();
+const flash=require('connect-flash');
 const cookieParser=require('cookie-parser');
 const path=require('path');
 const session=require('express-session');
 const passport=require('passport');
 const passportLocal=require('./config/passport');
 const MongoStore = require('connect-mongo')(session);
+const custommware=require('./config/middleware');
 
 
 app.use(express.urlencoded());
@@ -41,7 +43,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(passport.setAuthenticatedUser);
-
+app.use(flash());
+app.use(custommware.setFlash);
 app.use('/',require('./routes/index'));
 
 app.listen(port,function(err)

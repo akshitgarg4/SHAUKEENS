@@ -98,6 +98,7 @@ module.exports.create=function(req,res)
         if(err)
         {
             console.log("Error in signup email already exists");
+            req.flash('error'," Error Please Try Again");
             return res.redirect('back');
         }
         if(!person)
@@ -117,6 +118,10 @@ module.exports.create=function(req,res)
                 }
                 else{
                     console.log("creating db");
+                    req.flash('success','Successfully Signed Up ');
+                    req.flash('success','Sign In to continue');
+
+
                     return res.redirect('back');
                 }
                
@@ -124,6 +129,7 @@ module.exports.create=function(req,res)
             })
         }
         else{
+            req.flash('error','Email id already exists');
             return res.redirect('back');
         }
         
@@ -133,6 +139,9 @@ module.exports.create=function(req,res)
 module.exports.login= async function(req,res)
 {
    let logger=await user.find({'email':req.body.email});
+   //req.flash('success','Successfully Signed In ');
+   //return res.redirect('/');
+
    return res.render('main',{email:req.body.email,songs:logger[0].songs});
     
     
@@ -142,6 +151,8 @@ module.exports.login= async function(req,res)
 module.exports.signout=function(req,res)
 {
     req.logout();
+    req.flash('success','Logged Out');
+
     return res.redirect('/');
 }
 
@@ -158,6 +169,8 @@ module.exports.addfav=async function(req,res)
            logger[0].save();
        }
    }
+   req.flash('success','Song added to favourites');
+
     return res.redirect('back');
 }
 
@@ -172,6 +185,8 @@ module.exports.remfav=async function(req,res)
            logger[0].save();
        }
    }
+   req.flash('success','Song removed from favourites');
+
     return res.redirect('back');
 }
 
@@ -186,6 +201,8 @@ module.exports.addplist=async function(req,res)
            logger[0].save();
        }
    }
+   req.flash('success','Song added to Play list');
+
     return res.redirect('back');
 }
 
@@ -197,8 +214,11 @@ module.exports.remplist=async function(req,res)
        if(son.origin==req.query.ori && son.name==req.query.nam)
        {
            son.dest = 'none';
+   req.flash('success','Song removed from Play list');
+
            logger[0].save();
        }
    }
+
     return res.redirect('back');
 }

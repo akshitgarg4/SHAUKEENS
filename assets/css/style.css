@@ -464,7 +464,7 @@ a{
 	background-color: transparent;
 	width:inherit;
     font-size: 18px;
-    color:lightgrey;
+    color:grey;
 	border: 0px solid transparent;
 	outline: none;/*to remove the input box*/
 }
