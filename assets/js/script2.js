@@ -22,7 +22,7 @@ function process()
 					success:function(data)
 					{
 						console.log(data.message);
-						window.setTimeout(function(){location.reload()},3)
+						//window.setTimeout(function(){location.reload()},3)
 
 					}
                 });
@@ -46,7 +46,7 @@ function process()
 			dummy2.children[1].addEventListener('click',process2);//added event listener to new created div
 			dummy2.children[2].addEventListener('click',process);//added event listener to new created div
 			dummy2.children[3].addEventListener('click',playsound2);
-			//alert("Song added to Favourites")
+			alert("Song added to Favourites")
 			return;
 		}
 		else
@@ -59,7 +59,7 @@ function process()
 					success:function(data)
 					{
 						console.log(data.message);
-						window.setTimeout(function(){location.reload()},3)
+						//window.setTimeout(function(){location.reload()},3)
 
 					}
                 });
@@ -76,7 +76,7 @@ function process()
 			dummy2.children[1].addEventListener('click',process2);//added event listener to new created div
 			dummy2.children[2].addEventListener('click',process);//added event listener to new created div
 			dummy2.children[3].addEventListener('click',playsound2);
-			//alert("Song removed from Favourites")
+			alert("Song removed from Favourites")
 			return;
 
 		}
@@ -109,7 +109,7 @@ function process2()
 					success:function(data)
 					{
 						console.log(data.message);
-						window.setTimeout(function(){location.reload()},3)
+						//window.setTimeout(function(){location.reload()},3)
 
 					}
                 });
@@ -131,7 +131,7 @@ function process2()
 			dummy2.children[1].addEventListener('click',process2);//added event listener to new created div
 			dummy2.children[2].addEventListener('click',process);//added event listener to new created div
 			dummy2.children[3].addEventListener('click',playsound2);//added event listener to new created div
-			//alert("Song added to Playlist")
+			alert("Song added to Playlist")
 			return;
 		}
 		else
@@ -144,7 +144,7 @@ function process2()
 					success:function(data)
 					{
 						console.log(data.message);
-						window.setTimeout(function(){location.reload()},3)
+						//window.setTimeout(function(){location.reload()},3)
 
 					}
                 });
@@ -161,7 +161,7 @@ function process2()
 			dummy2.children[1].addEventListener('click',process2);//added event listener to new created div
 			dummy2.children[2].addEventListener('click',process);//added event listener to new created div
 			dummy2.children[3].addEventListener('click',playsound2);//added event listener to new created div
-			//alert("Song removed from Playlist")
+			alert("Song removed from Playlist")
 			return;
 
 		}
