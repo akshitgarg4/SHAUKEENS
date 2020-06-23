@@ -20,8 +20,7 @@ SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for bo
 <img src="SS/Screenshot8.png" width="750px" height="357px">
 
 ## Compatible for both Mobile Phones and Laptops
-<img src="SS/Screenshot7.png" width="289px" height="500px">
-<img src="SS/Screenshot6.png" width="289px" height="500px">
+<img src="SS/Screenshot7.png" width="260px" height="420px"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="SS/Screenshot6.png" width="260px" height="420px">
 
 # Run Instructions:-
 <ul>
