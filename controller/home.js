@@ -88,6 +88,10 @@ var songslist=[
 
 module.exports.home=function(req,res)
 {
+    if(req.isAuthenticated())
+    {
+        return res.redirect('/sign-out');
+    }
     return res.render('music');
 }
 
@@ -118,8 +122,8 @@ module.exports.create=function(req,res)
                 }
                 else{
                     console.log("creating db");
-                    req.flash('success','Successfully Signed Up ');
-                    req.flash('success','Sign In to continue');
+                     req.flash('success','Successfully Signed Up ');
+                     req.flash('success','Sign In to continue');
 
 
                     return res.redirect('back');
@@ -136,13 +140,22 @@ module.exports.create=function(req,res)
     })
       
 }
-module.exports.login= async function(req,res)
+module.exports.login= function(req,res)
 {
-   let logger=await user.find({'email':req.body.email});
-   //req.flash('success','Successfully Signed In ');
-   //return res.redirect('/');
-
-   return res.render('main',{email:req.body.email,songs:logger[0].songs});
+     return res.redirect('/sign-in');
+}
+module.exports.signin= async function(req,res)
+{
+    if(req.isAuthenticated())
+    {
+     let logger=await user.find({'email':req.user.email});
+     return res.render('main',
+     {
+        email:req.user.email,songs:logger[0].songs
+    });
+    
+    }
+    return res.redirect('/');
     
     
 }
@@ -170,7 +183,13 @@ module.exports.addfav=async function(req,res)
        }
    }
    req.flash('success','Song added to favourites');
-
+   
+    if(req.xhr)
+    {
+        return res.status(200).json({
+            message:'success'
+        })
+    }
     return res.redirect('back');
 }
 
@@ -186,7 +205,12 @@ module.exports.remfav=async function(req,res)
        }
    }
    req.flash('success','Song removed from favourites');
-
+   if(req.xhr)
+    {
+        return res.status(200).json({
+            message:'success'
+        })
+    }
     return res.redirect('back');
 }
 
@@ -202,7 +226,12 @@ module.exports.addplist=async function(req,res)
        }
    }
    req.flash('success','Song added to Play list');
-
+   if(req.xhr)
+   {
+       return res.status(200).json({
+           message:'success'
+       })
+   }
     return res.redirect('back');
 }
 
@@ -214,11 +243,17 @@ module.exports.remplist=async function(req,res)
        if(son.origin==req.query.ori && son.name==req.query.nam)
        {
            son.dest = 'none';
-   req.flash('success','Song removed from Play list');
 
            logger[0].save();
        }
    }
+   req.flash('success','Song removed from Play list');
 
+   if(req.xhr)
+    {
+        return res.status(200).json({
+            message:'success'
+        })
+    }
     return res.redirect('back');
 }

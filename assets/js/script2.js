@@ -18,7 +18,13 @@ function process()
             //alert(url);
                 $.ajax({
                     type:'get',
-                    url:url
+					url:url,
+					success:function(data)
+					{
+						console.log(data.message);
+						window.setTimeout(function(){location.reload()},3)
+
+					}
                 });
             
 			this.classList.add("permanent");//to mark heart as red
@@ -49,7 +55,13 @@ function process()
             //alert(url);
                 $.ajax({
                     type:'get',
-                    url:url
+                    url:url,
+					success:function(data)
+					{
+						console.log(data.message);
+						window.setTimeout(function(){location.reload()},3)
+
+					}
                 });
 			this.classList.remove("permanent");//removed red colour of heart
 			this.setAttribute('data-root','true');//to mark that song is removed from fav and added to its original section
@@ -93,7 +105,13 @@ function process2()
             //alert(url);
                 $.ajax({
                     type:'get',
-                    url:url
+                    url:url,
+					success:function(data)
+					{
+						console.log(data.message);
+						window.setTimeout(function(){location.reload()},3)
+
+					}
                 });
 			this.children[0].setAttribute('class','fas fa-minus-circle');
 			this.setAttribute('data-root','false');//to mark that data has been moved from its actual section
@@ -122,7 +140,13 @@ function process2()
             //alert(url);
                 $.ajax({
                     type:'get',
-                    url:url
+                    url:url,
+					success:function(data)
+					{
+						console.log(data.message);
+						window.setTimeout(function(){location.reload()},3)
+
+					}
                 });
 			this.children[0].setAttribute('class','fas fa-plus-circle');
 			this.setAttribute('data-root','true');//to mark that song is removed from fav and added to its original section
