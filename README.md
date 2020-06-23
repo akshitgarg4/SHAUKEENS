@@ -16,6 +16,9 @@ SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for bo
 ## Listen to Songs of your Favourite Language.
 <img src="SS/Screenshot5.png" width="750px" height="357px">
 
+## Add songs to PlayList or Favourite Section.
+<img src="SS/Screenshot8.png" width="750px" height="357px">
+
 ## Compatible for both Mobile Phones and Laptops
 <img src="SS/Screenshot7.png" width="289px" height="500px">
 <img src="SS/Screenshot6.png" width="289px" height="500px">
