@@ -1,4 +1,4 @@
-   ## <img src="static/logo.png" width="20px" height="20px"> SHAUKEENS 
+   ## <img src="assets/static/logo.png" width="20px" height="20px"> SHAUKEENS 
 SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for both mobile screens and laptops.
 
 ## Explore your PlayList and Favourite Songs.
@@ -20,5 +20,13 @@ SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for bo
 <img src="SS/Screenshot7.png" width="289px" height="500px">
 <img src="SS/Screenshot6.png" width="289px" height="500px">
 
-
-# NOTE : Still working on the Backend.
+# Run Instructions:-
+<ul>
+   <li>Clone the above repository.</li>
+   <li>Install all the dependencies listed in package.json using the following command</li>
+          &nbsp;&nbsp; npm install  
+   <li>Then use nnpm start to run the server</li>
+   <li>Then on any browser type the following url to visit the home page 127.0.0.1:8000</li>
+ </ul>
+   
+You need to Login if you want to maintain your Playlist and Favourites else these lists would be dynamic and they won't reload when you visit again.
