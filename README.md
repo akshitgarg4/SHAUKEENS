@@ -27,7 +27,7 @@ SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for bo
    <li>Clone the above repository.</li>
    <li>Install all the dependencies listed in package.json using the following command</li>
           &nbsp;&nbsp; npm install  
-   <li>Then use nnpm start to run the server</li>
+   <li>Then use npm start to run the server</li>
    <li>Then on any browser type the following url to visit the home page 127.0.0.1:8000</li>
  </ul>
    
