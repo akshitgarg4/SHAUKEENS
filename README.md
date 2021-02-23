@@ -1,5 +1,5 @@
    ## <img src="assets/static/logo.png" width="20px" height="20px"> SHAUKEENS 
-SHAUKEENS is a Music Player made with the help of HTML and CSS compatible for both mobile screens and laptops.
+<img src="https://github.com/akshitgarg4/SHAUKEENS/blob/master/SS/SHAUKEENS.gif">
 
 ## Explore your PlayList and Favourite Songs.
 <img src="SS/Screenshot1.png" width="750px" height="357px">
